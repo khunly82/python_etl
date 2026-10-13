@@ -24,7 +24,6 @@ def run_pipeline():
 
     run_notebook("delete_all.ipynb")
 
-    # 2. Chargement des dimensions en parallèle
     dim_notebooks = [
         "populate_dim_magasin.ipynb",
         "populate_dim_product.ipynb",
