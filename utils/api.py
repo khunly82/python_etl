@@ -157,6 +157,4 @@ async def get_all_meteo(
 
             if res:
                 flat_results.extend(res)
-
-            await asyncio.sleep(0.2)
     return flat_results
