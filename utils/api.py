@@ -145,9 +145,6 @@ async def get_all_meteo(
     flat_results = []
     async with AsyncClient() as client:
         for row in df_magasins.itertuples():
-            # Vérification de la présence des coordonnées
-            if pd.isna(row.latitude) or pd.isna(row.longitude):
-                continue
 
             res = await get_meteo_magasin(
                 client,
